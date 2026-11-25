@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radiovista"
+version = "0.1.0.dev0"
+description = "RadioVISTA scene engine: from coordinates to ray-traced cities, radio fields, and new questions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Homepage = "https://radiovista.github.io"
+Repository = "https://github.com/RadioVISTA/radiovista"
+"Raw simulated fields" = "https://huggingface.co/datasets/ScreeperC/radiovista-raw"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["radiovista", "radiovista.*"]
+namespaces = false
